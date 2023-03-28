@@ -40,15 +40,15 @@ export default async function HomePage() {
           priority
         />
         <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
-          <a
+          {/* <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://www.instagram.com/ayala.photographs/"
             className="flex items-center gap-2"
           >
             <TwitterIcon />
             {`${tweetCount.toLocaleString()} tweets all time`}
-          </a>
+          </a> */}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -73,10 +73,10 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/leeerob"
+            href="https://www.instagram.com/ayala.photographs/"
           >
             <ArrowIcon />
-            <p className="h-7">follow me on twitter</p>
+            <p className="h-7">follow me on instagram</p>
           </a>
         </li>
         <li>
@@ -84,10 +84,10 @@ export default async function HomePage() {
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://leerob.substack.com"
+            href="mailto:ayala.antonio.jesus@gmail.com"
           >
             <ArrowIcon />
-            <p className="h-7">get email updates</p>
+            <p className="h-7">email me</p>
           </a>
         </li>
       </ul>
