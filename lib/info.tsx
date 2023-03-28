@@ -5,7 +5,14 @@ export const avatar = me;
 export const about = () => {
   return (
     <>
-      Hey, I'm a developer who loves Next.js. I work at BigCo or CoolStartup as a Software Engineer.
+      I build your applications and websites
+    </>
+  );
+};
+export const tagline = () => {
+  return (
+    <>
+      Software Engineer and Web Developer
     </>
   );
 };
