@@ -1,6 +1,6 @@
-import me from '../app/placeholder.jpg';
+import me from '../app/antonio-headshot.png';
 
-export const name = 'Your Name';
+export const name = 'Antonio Jesus Ayala';
 export const avatar = me;
 export const about = () => {
   return (

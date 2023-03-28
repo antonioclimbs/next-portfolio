@@ -14,15 +14,15 @@ const kaisei = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Antonio Ayala',
-    template: '%s | Antonio Ayala',
+    default: 'Antonio Jesus Ayala',
+    template: '%s | Antonio Jesus Ayala',
   },
   description: 'Developer, writer, and creator.',
   openGraph: {
-    title: 'Antonio Ayala',
+    title: 'Antonio Jesus Ayala',
     description: 'Developer, writer, and creator.',
     url: 'https://leerob.io',
-    siteName: 'Antonio Ayala',
+    siteName: 'Antonio Jesus Ayala',
     images: [
       {
         url: 'https://leerob.io/og.jpg',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Antonio Ayala',
+    title: 'Antonio Jesus Ayala',
     card: 'summary_large_image',
   },
   icons: {

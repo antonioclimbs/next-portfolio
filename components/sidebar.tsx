@@ -22,7 +22,7 @@ const navItems = {
 
 function Logo() {
   return (
-    <Link aria-label="Antonio Ayala" href="/">
+    <Link aria-label="Antonio Jesus Ayala" href="/">
       <motion.svg
         className="text-black dark:text-white h-[25px] md:h-[37px]"
         width="25"
