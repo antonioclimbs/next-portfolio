@@ -19,7 +19,7 @@ export const tagline = () => {
 export const bio = () => {
   return (
     <>
-      When I'm not coding, I'm probably playing video games or watching anime. I also love to travel and explore new places.
+      I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, interactive applications and websites for companies to promote business.
     </>
   );
 };

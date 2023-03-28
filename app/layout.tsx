@@ -17,15 +17,15 @@ export const metadata: Metadata = {
     default: 'Antonio Jesus Ayala',
     template: '%s | Antonio Jesus Ayala',
   },
-  description: 'Developer, writer, and creator.',
+  description: 'Developer, software engineer, designer.',
   openGraph: {
     title: 'Antonio Jesus Ayala',
-    description: 'Developer, writer, and creator.',
-    url: 'https://leerob.io',
+    description: 'Developer, software engineer, designer.',
+    url: 'https://antoniojesusayala.io',
     siteName: 'Antonio Jesus Ayala',
     images: [
       {
-        url: 'https://leerob.io/og.jpg',
+        url: 'https://antoniojesusayala.io/og.jpg',
         width: 1920,
         height: 1080,
       },
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
   icons: {
     shortcut: '/favicon.ico',
   },
-  verification: {
-    google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
-    yandex: '14d2e73487fa6c71',
-  },
+  // verification: {
+  //   google: 'eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw',
+  //   yandex: '14d2e73487fa6c71',
+  // },
 };
 
 export default function RootLayout({
