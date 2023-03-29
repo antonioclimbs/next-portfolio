@@ -5,7 +5,7 @@ export const avatar = me;
 export const about = () => {
   return (
     <>
-      And I build your applications and websites
+      and I build your applications and websites
     </>
   );
 };
