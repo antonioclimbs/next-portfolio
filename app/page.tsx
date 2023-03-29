@@ -26,22 +26,25 @@ export default async function HomePage() {
 
   return (
     <section>
+      <p className="max-w-[600px] text-xl pb-3 text-neutral-800 dark:text-neutral-200">
+        Hi, my name is
+      </p>
       <h1 className="font-bold text-5xl font-serif">{name}</h1>
-      <h2 className="font-bold text-xl my-3 max-w-[600px] text-neutral-800 dark:text-neutral-200">
+      <h2 className="font-bold text-2xl my-3 max-w-[600px] text-neutral-800 dark:text-neutral-200">
         {tagline()}
       </h2>
-      {/* <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
+      <h3 className="font-bold my-3 max-w-[460px] text-neutral-800 dark:text-neutral-200">
         {about()}
-      </p> */}
-      <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
-        <Image
+      </h3>
+      <div className="flex items-start md:items-center flex-col md:flex-row">
+        {/* <Image
           alt={name}
           className="rounded-full"
           src={avatar}
           placeholder="blur"
           width={500}
           priority
-        />
+        /> */}
         <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-500 dark:text-neutral-400">
           {/* <a
             rel="noopener noreferrer"
