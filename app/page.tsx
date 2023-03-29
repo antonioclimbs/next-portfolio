@@ -40,9 +40,15 @@ export default async function HomePage() {
         {bio()}
       </p>
       <div className='text-xl'>
-        <button className='m-10'>About</button>
-        <button className='m-10'>Experience</button>
-        <button className='m-10'>Contact</button>
+        <Link href='/about'>
+          <button className='m-10'>About</button>
+        </Link>
+        <Link href='/experience'>
+          <button className='m-10'>Experience</button>
+        </Link>
+        <Link href='/contact'>
+          <button className='m-10'>Contact</button>
+        </Link>
       </div>
     </section>
   );

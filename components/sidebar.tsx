@@ -12,11 +12,11 @@ const navItems = {
   '/about': {
     name: 'about',
   },
-  '/blog': {
-    name: 'blog',
+  '/experience': {
+    name: 'experience',
   },
-  '/guestbook': {
-    name: 'guestbook',
+  '/contact': {
+    name: 'contact',
   },
 };
 
@@ -67,8 +67,8 @@ function Logo() {
 
 export default function Navbar() {
   let pathname = usePathname() || '/';
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
+  if (pathname.includes('/experience/')) {
+    pathname = '/experience';
   }
 
   return (
