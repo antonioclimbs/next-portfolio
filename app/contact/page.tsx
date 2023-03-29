@@ -17,13 +17,13 @@ async function getGuestbook() {
 }
 
 export const metadata: Metadata = {
-  title: 'Guestbook',
-  description: 'Sign my guestbook and leave your mark.',
+  title: 'Contact',
+  description: 'Get in contact with me.',
 };
 
 export const dynamic = 'force-dynamic';
 
-export default async function GuestbookPage() {
+export default async function ContactPage() {
   let entries;
   let session;
 
@@ -50,7 +50,7 @@ export default async function GuestbookPage() {
 
   return (
     <section>
-      <h1 className="font-bold text-5xl font-serif mb-5">Guestbook</h1>
+      <h1 className="font-bold text-5xl font-serif mb-5">Contact</h1>
       {session?.user ? (
         <>
           <Form />
