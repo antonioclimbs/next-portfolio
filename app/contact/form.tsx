@@ -28,9 +28,9 @@ export default function Form() {
   }
   */
   return (
-    <div className="w-full md:w-auto text-l text-black">
+    <div className="md:w-auto text-l text-black">
       <form target="_blank" action={`https://formsubmit.co/${to_email}`} method="POST">
-        <div className='grid'>
+        <div className='grid md:w-auto'>
           <div className='mb-5 flex'>
             <input
               type="text"
@@ -49,7 +49,7 @@ export default function Form() {
           <textarea
             placeholder="Your Message"
             rows={8}
-            className="border-solid border-orange-100 bg-orange-50 p-2 px-2 rounded"
+            className="border-solid border-orange-100 bg-orange-50 p-2 px-2 rounded resize"
             name="message"
             required>
           </textarea>

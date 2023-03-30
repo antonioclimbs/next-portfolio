@@ -49,7 +49,7 @@ export default async function ContactPage() {
   }
 
   return (
-    <section className='w-full md:w-auto'>
+    <section className='w-6xl'>
       <h1 className="font-bold text-5xl font-serif mb-5">Contact</h1>
       <p>include phone number for easy access</p>
       <Form />
