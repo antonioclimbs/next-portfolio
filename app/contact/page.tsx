@@ -51,24 +51,7 @@ export default async function ContactPage() {
   return (
     <section>
       <h1 className="font-bold text-5xl font-serif mb-5">Contact</h1>
-      {session?.user ? (
-        <>
-          <Form />
-          <SignOut />
-        </>
-      ) : (
-        <SignIn />
-      )}
-      {entries.map((entry) => (
-        <div key={entry.id} className="flex flex-col space-y-1 mb-4">
-          <div className="w-full text-sm break-words">
-            <span className="text-neutral-600 dark:text-neutral-400 mr-1">
-              {entry.created_by}:
-            </span>
-            {entry.body}
-          </div>
-        </div>
-      ))}
+      <p>use a form to send an email, plus have phone number for easy access</p>
     </section>
   );
 }
