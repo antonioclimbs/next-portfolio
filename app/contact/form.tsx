@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useState, useTransition } from 'react';
+import { BsTextarea } from 'react-icons/bs';
 
 export default function Form() {
   const router = useRouter();
@@ -16,7 +17,7 @@ export default function Form() {
     const form = e.currentTarget;
     const input = form.elements.namedItem('entry') as HTMLInputElement;
 
-    const res = await fetch('/api/guestbook', {
+    const res = await fetch('/api/contact', {
       body: JSON.stringify({
         body: input.value,
       }),
@@ -38,11 +39,35 @@ export default function Form() {
   }
 
   return (
+    <div className="container text-l text-black">
+      <form target="_blank" action="https://formsubmit.co/d5306b6f079fd121ae67ddbdc54fdd8b" method="POST">
+        <div className='grid'>
+          <div className='mb-5 flex'>
+            <input type="text" name="name" className="border-solid border-orange-100 bg-orange-50 p-2 px-2 rounded mr-10 w-1/2" placeholder="Full Name" required></input>
+            <input type="email" name="email" className="border-solid border-orange-100 bg-orange-50 p-2 px-2 rounded text-black-800 w-1/2" placeholder="Email" required></input>
+          </div>
+          <textarea placeholder="Your Message" rows={8} className="border-solid border-orange-100 bg-orange-50 p-2 px-2 rounded " name="message" required></textarea>
+        </div>
+        <button type="submit" className='mt-5 border-solid border-2 border-orange-100 bg-orange-100 p-5 px-8 rounded text-black text-xl font-medium'>Submit Form</button>
+      </form>
+    </div>
+  )
+  /*
+  return (
     <form
       style={{ opacity: !isMutating ? 1 : 0.7 }}
       className="relative max-w-[500px] text-sm"
       onSubmit={onSubmit}
     >
+      <input
+        aria-label="Your email"
+        placeholder="Your email..."
+        disabled={isPending}
+        name="email"
+        type="email"
+        required
+        className="pl-4 pr-32 py-2 mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full border-neutral-300 rounded-md bg-gray-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100"
+      />
       <input
         aria-label="Your message"
         placeholder="Your message..."
@@ -61,4 +86,5 @@ export default function Form() {
       </button>
     </form>
   );
+  */
 }

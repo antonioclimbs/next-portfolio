@@ -52,6 +52,7 @@ export default async function ContactPage() {
     <section>
       <h1 className="font-bold text-5xl font-serif mb-5">Contact</h1>
       <p>use a form to send an email, plus have phone number for easy access</p>
+      <Form />
     </section>
   );
 }
