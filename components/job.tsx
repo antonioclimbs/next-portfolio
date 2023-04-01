@@ -1,19 +1,21 @@
-interface JobsProps {
+interface JobProps {
   job: string
   description: string[]
 }
 
-export default function Jobs(props: JobsProps): JSX.Element {
+export default function Job(props: JobProps): JSX.Element {
   const { job, description } = props;
-  const bullets = [];
+  const bullets = [] as JSX.Element[];
   for (let des in description) {
-
+    bullets.push(
+      <li>{des}</li>
+    )
   }
   return (
     <section>
       <h1>{job}</h1>
       <ul>
-
+        {bullets}
       </ul>
     </section>
   );
