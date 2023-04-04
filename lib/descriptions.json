@@ -31,13 +31,11 @@
     ]
   },
   {
-    "job": "job",
-    "title": "title",
+    "job": "HireSmith",
+    "title": "Software Engineer",
     "description": [
-      "bullet1",
-      "bullet2",
-      "bullet3",
-      "bullet4"
+      "Secured user information by incorporating OAuth with Passport and stored all user information in MongoDB, minimizing security threats through third-party authentication and handling data via compressed documents to perform queries quickly",
+      "Created a test-generation suite using Jest and Supertest to validate application endpoints in a human-readable syntax for ease of debugging and code maintainability, producing unit and server tests to ensure proper backend functionality and integrity"
     ]
   }
 ]

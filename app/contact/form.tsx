@@ -1,36 +1,12 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { useState, useTransition } from 'react';
-import { BsTextarea } from 'react-icons/bs';
 const to_email = process.env.TO_EMAIL;
 
 export default function Form() {
-  /*
-  const router = useRouter();
-  const [isPending, startTransition] = useTransition();
-  const [isFetching, setIsFetching] = useState(false);
-  const isMutating = isFetching || isPending;
-
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-
-    const form = e.currentTarget;
-    const name = form.elements.namedItem('name') as HTMLInputElement;
-
-    name.value = '';
-
-    startTransition(() => {
-      // Refresh the current route and fetch new data from the server without
-      // losing client-side browser or React state.
-      router.refresh();
-    });
-  }
-  */
   return (
     <div className="md:w-auto text-l text-black">
       <form target="_blank" action={`https://formsubmit.co/${to_email}`} method="POST">
-        <div className='grid md:w-auto'>
+        <div className='grid'>
           <div className='mb-5 flex'>
             <input
               type="text"

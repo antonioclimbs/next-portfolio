@@ -1,20 +1,5 @@
 import type { Metadata } from 'next';
-import { queryBuilder } from 'lib/planetscale';
-import { SignIn, SignOut } from './actions';
-import { getServerSession } from 'next-auth/next';
-import { authOptions } from 'pages/api/auth/[...nextauth]';
 import Form from './form';
-
-async function getGuestbook() {
-  const data = await queryBuilder
-    .selectFrom('guestbook')
-    .select(['id', 'body', 'created_by', 'updated_at'])
-    .orderBy('updated_at', 'desc')
-    .limit(100)
-    .execute();
-
-  return data;
-}
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -23,36 +8,13 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
-export default async function ContactPage() {
-  let entries;
-  let session;
-
-  try {
-    const [guestbookRes, sessionRes] = await Promise.allSettled([
-      getGuestbook(),
-      getServerSession(authOptions),
-    ]);
-
-    if (guestbookRes.status === 'fulfilled' && guestbookRes.value[0]) {
-      entries = guestbookRes.value;
-    } else {
-      console.error(guestbookRes);
-    }
-
-    if (sessionRes.status === 'fulfilled') {
-      session = sessionRes.value;
-    } else {
-      console.error(sessionRes);
-    }
-  } catch (error) {
-    console.error(error);
-  }
-
+export default function ContactPage() {
   return (
-    <section className='w-6xl'>
+    <section className=''>
       <h1 className="font-bold text-5xl font-serif mb-5">Contact</h1>
-      <p>include phone number for easy access</p>
+      <p className="my-5 text-xl text-orange-100 dark:text-orange-100">Send me a message so we can connect</ p>
       <Form />
+      {/* <p className="my-5 w-full text-xl text-orange-100 dark:text-orange-100">Or call me at (909) 568-7639</p> */}
     </section>
   );
 }
