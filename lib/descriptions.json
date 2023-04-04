@@ -1,0 +1,38 @@
+[
+  {
+    "job": "job1",
+    "description": [
+      "bullet1",
+      "bullet2",
+      "bullet3",
+      "bullet4"
+    ]
+  },
+  {
+    "job": "job2",
+    "description": [
+      "bullet1",
+      "bullet2",
+      "bullet3",
+      "bullet4"
+    ]
+  },
+  {
+    "job": "job3",
+    "description": [
+      "bullet1",
+      "bullet2",
+      "bullet3",
+      "bullet4"
+    ]
+  },
+  {
+    "job": "job4",
+    "description": [
+      "bullet1",
+      "bullet2",
+      "bullet3",
+      "bullet4"
+    ]
+  }
+]
