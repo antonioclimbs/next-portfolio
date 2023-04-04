@@ -10,27 +10,19 @@ export const metadata: Metadata = {
   description: 'Learn more about my past experience.',
 };
 
-// const fakeJob = {
-//   'job': 'job1',
-//   'description': [
-//     'a',
-//     'b',
-//     'c'
-//   ]
-// }
-
 export default async function ExperiencePage() {
-  const allJobs = [];
+  const allJobs = [] as JSX.Element[];
   for (let i = 0; i < jobs.length; i++) {
-    // allJobs.push(Job(jobs[i]))
+    allJobs.push(Job(jobs[i]))
   }
   return (
-    <section>
+    <div>
       <h1 className="font-bold text-5xl font-serif mb-5">Experience</h1>
-      <p>create a new component to reuse for all experiences</p>
-      <p>this can be looped through if desired/needed</p>
+      {/* <p>create a new component to reuse for all experiences</p>
+      <p>this can be looped through if desired/needed</p> */}
       {/* {Job(fakeJob['job'], fakeJob['description'])} */}
-      {Job(jobs[0])}
-    </section>
+      {/* {Job(jobs[0])} */}
+      {allJobs}
+    </div>
   );
 };
